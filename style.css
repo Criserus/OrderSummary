@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /*Primary Colors*/
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /*Neutral Colors */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: url(/images/pattern-background-mobile.svg) no-repeat center cover;
+    background-color: var(--very-pale-blue);
+}
+
+body, p {
+    font-size: 16px;
+}
+
+.wrapper {
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 375px;
+    margin: auto;
+}
+
+.wrapper img {
+    width: 100%;
+}
+
+.container {
+    padding: 0 20px 0 20px;;
+}
+
+.hero img {
+    border-radius: 10px 10px 0 0;
+}
+
+h1, p {
+    margin: 10px 0 0 0;
+}
+
+h1, h3 {
+    color: var(--dark-blue);
+}
+
+.container {
+    text-align: center;
+}
+
+.container p {
+    color: var(--desaturated-blue);
+}
+
+.plan {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.plan img {
+    width: 4em;
+}
+
+.plan article {
+    text-align: left;
+    flex: 1;
+    margin-left: 10px;
+    line-height: .5;
+}
+
+.btn {
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 1em 0 1em 0;
+    border-radius: 10px;
+    border: none;
+   
+}
+
+.btn:active {
+    opacity: 0.6;
+}
+
+.btn-primary {
+    background-color: var(--bright-blue);
+    color: white;
+    margin-top: 10px;
+}
+
+.btn-secondary {
+    color: var(--desaturated-blue);
+    margin-bottom: 10px;
+    background: none;
+}
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    margin: 10px 0 10px 0;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen (min-width: 376px;) {
+    body {
+        background: url(/images/pattern-background-desktop.svg) no-repeat center cover;
+    }
+}
